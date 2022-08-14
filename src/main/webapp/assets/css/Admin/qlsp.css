@@ -1,0 +1,733 @@
+body {
+    background: #eee4ff;
+}
+
+
+/* logo */
+
+.header {
+    width: 100%;
+    background-color: rgba(56, 53, 53, 0.788);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 0;
+    position: fixed;
+    z-index: 1;
+}
+
+.admin {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+.admin__name {
+    top: 12px;
+    position: absolute;
+    right: calc(10% + 24px);
+}
+
+.admin__logout {
+    top: 12px;
+    position: absolute;
+    right: 10%;
+}
+
+/* Danh mục */
+
+#category_details {
+    display: flex;
+    justify-content: space-between;
+}
+
+#category_details>li {
+    display: inline-block;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+#category_details li {
+    position: relative;
+    text-align: center;
+}
+
+#category_details li a {
+    text-decoration: none;
+    padding: 0 10px;
+    display: inline-block;
+    margin: 12px 18px
+}
+
+#category_details li a h3 {
+    text-decoration: none;
+    /* line-height: 46px; */
+    padding: 0 24px;
+    display: flex;
+}
+
+
+/* Show all */
+
+#menu {
+    display: block;
+}
+
+#show_pro {
+    display: inline-block
+}
+
+#show_pro li {
+    display: block;
+    position: relative;
+}
+
+#show_pro li a {
+    border: 2px solid black;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+    margin: 12px 18px
+}
+
+#show_pro li a h3 {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+#show_pro li a h3:hover {
+    color: red;
+}
+
+#show_pro1 {
+    display: inline-flex;
+}
+
+#menu_1 {
+    clear: left;
+}
+
+#show_pro1 li {
+    position: relative;
+    display: inline-block;
+}
+
+#show_pro1 li a {
+    border: 2px solid black;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+    margin: 12px 18px
+}
+
+#show_pro1 li a h3:hover {
+    color: red;
+}
+
+#show_pro1 li a h3 {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+
+/* Phân loại */
+
+.dropdown-choice {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.06)) repeat scroll 0 0 #F2F2F2;
+    border-color: #FFFFFF #F7F7F7 #F5F5F5;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
+    display: inline-block;
+    height: 40px;
+    /*overflow: hidden;*/
+    position: relative;
+    width: 150px;
+    margin: 10px 52px;
+    float: left;
+    border-radius: 10px;
+}
+
+.arrow {
+    position: relative;
+}
+
+.dropdown-choice-1 {
+    background: linear-gradient(to bottom, #f7f7f7, rgba(0, 0, 0, 0.06)) repeat scroll 0 0 #F2F2F2;
+    background-color: rgba(228, 160, 183, 1);
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 8%);
+    display: inline-block;
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+    width: 155px;
+    border-radius: 10px;
+    color: black;
+}
+
+.dropdown-.dropdown-choice {
+    border-bottom-style: solid;
+    border-top: medium none;
+}
+
+.dropdown-select {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+    border: 0 none;
+    border-radius: 10px;
+    color: black;
+    font-size: 21px;
+    height: 39px;
+    line-height: 13px;
+    margin: 0;
+    padding: 6px 8px 6px 10px;
+    position: relative;
+    text-shadow: 0 1px #ffffff;
+    width: 100%;
+}
+
+.dropdown-select option {
+    border-radius: 10px;
+}
+
+.contents-amount {
+    position: relative;
+}
+
+.contents-amount::before {
+    content: " ";
+    position: absolute;
+    width: 150px;
+    height: 20px;
+    left: -5px;
+    bottom: -10px;
+}
+
+.dropdown-select:focus {
+    color: #394349;
+    outline: 2px solid #49AFF2;
+    outline-offset: -2px;
+    width: 100%;
+    z-index: 3;
+}
+
+.dropdown-select>option {
+    background: none repeat scroll 0 0 #F2F2F2;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 3px;
+    padding: 6px 8px;
+    text-shadow: none;
+}
+
+
+/* Thêm */
+
+.add {
+    margin: 7px;
+}
+
+.add button {
+    float: left;
+    margin: 0px 30px;
+}
+
+
+/* table info */
+
+#info {
+    /* s */
+    margin-left: -18px;
+    padding: 6px 5px 8px 72px;
+    clear: both;
+}
+
+.dropdown-icon {
+    position: absolute;
+    left: 70px;
+    bottom: 6px
+}
+
+#info table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#info>table>thead>tr>th>a {
+    text-decoration: none;
+    color: black;
+}
+
+#info>table>thead>tr>th>a:hover {
+    color: red;
+}
+
+#info th {
+    color: #171717;
+    /* padding: 0; */
+    align-content: center;
+    width: 169px;
+}
+
+#info .total_vip {
+    padding: 10px 50px;
+}
+
+#info tfoot td {
+    color: #171717;
+    border: 1px solid red;
+    padding: 10px;
+}
+
+
+/* Nút Dropdown*/
+
+.nut_dropdown {
+    color: white;
+    padding: 2px;
+    font-size: 18px;
+    border: none;
+    position: absolute;
+    margin: 1px 45px;
+    right: -10px;
+    bottom: 9px;
+    color: black;
+}
+
+.nut_dropdown-amount {
+    color: white;
+    padding: 2px;
+    font-size: 18px;
+    border: none;
+    position: absolute;
+    margin: 1px 45px;
+    right: 40px;
+    bottom: 9px;
+    color: black;
+}
+
+.nut_dropdown-price {
+    color: white;
+    padding: 2px;
+    font-size: 18px;
+    border: none;
+    position: absolute;
+    margin: 1px 45px;
+    right: -10px;
+    bottom: 9px;
+    color: black;
+}
+
+.nut_dropdown-price:hover .noidung_dropdown {
+    display: block;
+}
+
+.amount-link a {
+    text-decoration: none;
+    min-width: 150px;
+    background-color: none !important;
+}
+
+.amount-link {
+    cursor: pointer;
+    min-width: 150px;
+    border-radius: 10px;
+}
+
+.amount-link:hover {
+    background-color: rgb(202, 195, 195);
+}
+
+.noidung_dropdown-amount .amount-link {
+    padding: 10px !important;
+}
+
+.noidung_dropdown-amount::before {
+    content: " ";
+    position: absolute;
+    width: 80px;
+    height: 20px;
+    bottom: 60px;
+    left: -5px;
+}
+
+.nut_dropdown-amount i {
+    margin-left: -10px !important;
+}
+
+.nut_dropdown-amount:hover .noidung_dropdown-amount {
+    display: block;
+}
+
+.table__row {
+    height: 50px;
+}
+
+
+/* Thiết lập vị trí cho thẻ div với class dropdown*/
+
+.dropdown {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-dropdown {
+    margin-left: 10px;
+}
+
+
+/* Nội dung Dropdown */
+
+.noidung_dropdown-amount {
+    margin: 10px;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    z-index: 1;
+    font-size: 12px;
+    border-radius: 7px;
+    top: -10px;
+}
+
+.noidung_dropdown {
+    /*Ẩn nội dụng các đường dẫn*/
+    margin: 10px;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    z-index: 1;
+    font-size: 12px;
+    margin: 2px 81px;
+    border-radius: 7px;
+    left: -75px;
+}
+
+
+/* Thiết kế style cho các đường dẫn tronng Dropdown */
+
+.noidung_dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* thay đổi màu background khi hover vào đường dẫn */
+
+.noidung_dropdown a:hover {
+    background-color: #ddd;
+}
+
+
+/* hiển thị nội dung dropdown khi hover */
+
+.nut_dropdown:hover .noidung_dropdown {
+    display: block;
+}
+
+
+/* Thay đổi màu background cho nút khi được hover */
+
+
+/* .dropdown:hover .nut_dropdown {background-color: #00bfff;} */
+
+
+/*Dùng Để hiển thị nội dung*/
+
+.hienThi {
+    display: block;
+}
+
+.quanity_buy .dropdown .nut_dropdown {
+    margin: 1px 62px;
+}
+
+.quanity_buy .dropdown .noidung_dropdown {
+    margin: 3px 90px;
+}
+
+.modal {
+    background-color: rgba(228, 160, 183, 0.4) !important;
+}
+
+.modal-content {
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    /* background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a781ce32751817.56929eefe4f71.jpg); */
+}
+
+
+/* Modal */
+
+.container {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+#myBtn {
+    border-radius: 10px;
+    outline: none;
+}
+
+#myBtn:hover {
+    box-shadow: 0px 0px 5px 2px rgba(224, 111, 205, 0.75);
+    color: red;
+}
+
+
+/* Định dạng phần form đăng nhập*/
+
+.fomrgroup {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.fomrgroup b {
+    background-color: rgba(228, 160, 183, 1);
+    border-radius: 5px;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-choice-1 {
+    margin-left: 100px;
+}
+
+.btn-submit {
+    margin-left: 150px;
+}
+
+.btn-submit button {
+    background-color: rgb(224, 48, 107);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.btn-repair {
+    width: 100%;
+    font-weight: 700;
+    font-size: 1.4rem;
+    height: 50px;
+}
+
+.fomrgroup input {
+    float: right;
+     width: 75%; 
+    height: 25px;
+     margin-right: 5%; 
+    line-height: 50px;
+    min-width: 55px;
+    border-radius: 10px;
+}
+
+.fomrgroup b {
+    font-size: 16px;
+}
+
+.btn-sumit {
+    margin: 10px;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* mặc định được ẩn đi */
+    position: fixed;
+    /* vị trí cố định */
+    z-index: 1;
+    /* Ưu tiên hiển thị trên cùng */
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-form {
+    display: none;
+    /* mặc định được ẩn đi */
+    position: fixed;
+    /* vị trí cố định */
+    z-index: 1;
+    /* Ưu tiên hiển thị trên cùng */
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 25%;
+}
+
+.modal-content-1 {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100px;
+}
+
+.btn-delete {
+    width: 100%;
+    font-weight: 700;
+    font-size: 1.4rem;
+    height: 50px;
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Nút Sửa */
+
+#info table thead tr th .namefood .modal .modal-content {
+    display: flex;
+}
+
+
+/* Modal details */
+
+.btn {
+    width: 100%;
+    font-weight: 700;
+    font-size: 1.4rem;
+    height: 50px;
+}
+
+.modal-edit {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .65);
+    display: none;
+}
+
+#control-modal:checked~.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fade .6s forwards;
+    opacity: 0;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.modal-content-edit {
+    background-color: white;
+    width: 512px;
+    border-radius: 3px;
+}
+
+.modal-header {
+    padding: 12px 24px;
+    text-align: center;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    background-color: gray;
+    color: white;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 50%;
+    top: -10px;
+    right: -10px;
+    cursor: pointer;
+}
+
+.modal-body {
+    padding: 12px 24px 24px;
+}
+
+input#control-modal {
+    display: none;
+}
+
+.category__item {
+    margin-right: 30px;
+    border-radius: 10px
+}
+
+.btn-icon {
+    margin-left: 5px;
+}

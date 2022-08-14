@@ -1,0 +1,256 @@
+ul {
+     margin: 0;
+     padding: 0;
+     list-style-type: none;
+ }
+ 
+ .container {
+     margin-top: 100px;
+ }
+ 
+ .category {}
+ 
+ .category__title a {
+     display: block;
+     font-size: 20px;
+     font-weight: 700;
+     border-bottom: 1px solid #ccc;
+     padding: 12px 8px;
+     color: #333;
+ }
+ 
+ .category__list {}
+ 
+ .category__item {
+     display: flex;
+     justify-content: left;
+     align-items: center;
+     text-decoration: none;
+ }
+ 
+ .category__item img {
+     margin-left: 10px;
+     width: 30px;
+     height: 30px;
+     object-fit: contain;
+ }
+ 
+ .category__item span {
+     display: inline-block;
+     padding: 16px;
+     font-size: 16px;
+     color: #333;
+ }
+ 
+ .category__item:hover {
+     background-color: #ccc;
+     border-radius: 8px;
+ }
+ 
+ .content {
+     margin-left: 40px;
+ }
+ 
+ .search-bar {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .search-bar__input {
+     flex: 1;
+     position: relative;
+     margin-right: 20px;
+     align-items: center;
+ }
+ 
+ .search-bar__input input {
+     width: 100%;
+     font-size: 16px;
+     padding: 8px;
+ }
+ 
+ .search-bar__submit {
+     position: absolute;
+     right: 8px;
+     top: 4px;
+     bottom: 4px;
+     border-radius: 8px;
+     color: #333;
+     font-size: 16px;
+     width: 100px;
+     cursor: pointer;
+     outline: none;
+     border: none;
+     background-color: var(--medium-primary-color);
+ }
+ 
+ .search-bar__sort {
+     font-size: 16px;
+     background-color: var(--medium-primary-color);
+     padding: 10px 12px;
+     color: #333;
+     border-radius: 8px;
+     cursor: pointer;
+     position: relative;
+ }
+ 
+ .search-bar__sort:hover .search-bar-sort-list {
+     display: block;
+ }
+ 
+ .search-bar-sort-list {
+     display: none;
+     position: relative;
+     position: absolute;
+     top: calc(100% + 8px);
+     left: 12px;
+     width: 200px;
+     z-index: 999;
+     background-color: #eee;
+ }
+ 
+ .search-bar-sort-list::after {
+     display: block;
+     content: "";
+     position: absolute;
+     width: 100%;
+     height: 20px;
+     top: -20px;
+     left: -12px;
+ }
+ 
+ .search-bar-sort-item:hover {
+     background-color: var(--medium-primary-color);
+ }
+ 
+ .search-bar-sort-item a {
+     display: block;
+     text-decoration: none;
+     color: #333;
+     padding: 8px 12px;
+ }
+ 
+ .food-list {
+     margin-top: 32px;
+ }
+ 
+ .food-item {
+     position: relative;
+     display: block;
+     margin: 16px 0;
+     color: #333;
+     background-color: var(--light-primary-color);
+     border-radius: 8px;
+     overflow: hidden;
+     box-shadow: 0 0 4px #ccc;
+ }
+ 
+ .food-item::after {
+     display: block;
+     content: "";
+     clear: both;
+ }
+ 
+ .food-item__img {
+     width: 100%;
+ }
+ 
+ .food-item__info {
+     padding: 0 8px;
+ }
+ 
+ .food-item__img img {
+     width: 100%;
+     height: 160px;
+     object-fit: cover;
+     object-align: center;
+ }
+ 
+ .food-item__name {
+     font-size: 18px;
+     font-weight: 400;
+     margin: 4px 0;
+     line-height: 24px;
+     height: 24px;
+     display: -webkit-box;
+     -webkit-box-orient: vertical;
+     -webkit-line-clamp: 1;
+     overflow: hidden;
+ }
+ 
+ .food-item__desc {
+     font-size: 12px;
+     line-height: 16px;
+     height: 32px;
+     color: #999;
+     display: -webkit-box;
+     -webkit-box-orient: vertical;
+     -webkit-line-clamp: 2;
+     overflow: hidden;
+ }
+ 
+ .food-item__price {
+     font-size: 20px;
+     float: right;
+     padding: 4px 0 12px;
+     padding-right: 12px;
+     color: var(--dark-primary-color);
+ }
+ 
+ .pagination {
+     margin: 12px 0 100px;
+ }
+ 
+ .pagination__list {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .pagination__item {}
+ 
+ .pagination__item a {
+     margin: 0 12px;
+     background-color: var(--light-primary-color);
+     display: block;
+     padding: 8px 20px;
+     text-decoration: none;
+     color: var(--dark-primary-color);
+     font-size: 20px;
+ }
+ 
+ .food-item-sale-off {
+     position: absolute;
+     top: 0;
+     right: 0;
+     background-color: rgba(255, 212, 36, 0.9);
+     text-align: center;
+     padding: 0 4px 8px 4px;
+     width: 60px;
+ }
+ 
+ .food-item-sale-off::before {
+     position: absolute;
+     display: block;
+     content: "";
+     top: 100%;
+     right: 0;
+     border-width: 0 30px 10px 30px;
+     border-style: solid;
+     border-color: transparent rgba(255, 212, 36, 0.9);
+ }
+ 
+ .food-item-sale-off__value {
+     font-size: 18px;
+     color: var(--dark-primary-color);
+     font-weight: 700;
+     padding-top: 8px;
+ }
+ 
+ .food-item-sale-off__text {
+     text-transform: uppercase;
+     color: var(--dark-primary-color);
+     font-size: 14px;
+     font-weight: 500;
+ }

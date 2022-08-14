@@ -1,0 +1,90 @@
+.header{
+    width:100%;
+    background-color: rgba(228,160,183,0.788);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 0 ;
+    position:fixed;
+    z-index: 1;
+}
+.header__left{
+    width:55%;
+    display: flex;
+    align-items: center;
+}
+
+.header__logo-img{
+    width:93px;
+    height:40px ;
+}
+.header__navigation-icon{
+    margin-right: 8px;
+}
+.header__navigation{
+    margin-top:15px;
+}
+
+.header__navigation-item{
+    display: flex;
+    margin: 0 15px;
+    font-size: 1.5rem;
+    align-items: center;
+}
+.header__navigation-item:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+.header__navigation-item-link{
+    display: flex;
+    color: white;
+   
+}
+.navigation-list{
+    list-style: none;
+    display: flex;
+    color: white;
+}
+.header__right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 1.8rem;
+}
+.header__cart{
+    margin-right: 30px;
+    font-size: 2.5rem;
+    position: relative;
+    cursor: pointer;
+}
+.header__cart::after{
+    content: "";
+    background-color:yellow;
+    width:25px;
+    height:16px;
+    display: block;
+    border-radius:15px;
+    position: absolute;
+    right: -10px;
+    top: 17px;
+}
+.header__right-user-link{
+    text-decoration: none;
+}
+.header__navigation-item-link:hover{
+    color: #ff514e;
+    text-decoration: none;
+}
+
+.header__user{
+    display: flex;
+    color: white;
+    text-decoration: none;
+}
+.header__user-icon{
+    margin-right:10px;
+}
+.header__right-user-link:hover{
+    text-decoration: none;
+}

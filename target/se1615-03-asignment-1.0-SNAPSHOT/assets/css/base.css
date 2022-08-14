@@ -1,0 +1,40 @@
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-primary-color: #f25b5e;
+    --medium-primary-color: #f79896;
+    --light-primary-color: #f9dfe3;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    ;
+    font-size: 16px;
+    line-height: 1;
+}
+
+th {
+    font-size: 12px;
+    font-weight: 300;
+    padding: 0 8px;
+    line-height: 16px;
+}
+
+tfoot td {
+    font-size: 14px;
+    line-height: 18px;
+}

@@ -1,0 +1,388 @@
+.header{
+    width:100%;
+    background-color: rgba(228,160,183,0.788);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 0 ;
+    position:fixed;
+    z-index: 1;
+}
+.header__left{
+    width:55%;
+    display: flex;
+    align-items: center;
+}
+
+.header__logo-img{
+    width:93px;
+    height:40px ;
+}
+.header__navigation-icon{
+    margin-right: 8px;
+}
+.header__navigation{
+    margin-top:15px;
+}
+
+.header__navigation-item{
+    display: flex;
+    margin: 0 15px;
+    font-size: 1.5rem;
+    align-items: center;
+}
+.header__navigation-item:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+.header__navigation-item-link{
+    display: flex;
+    color: white;
+   
+}
+.navigation-list{
+    list-style: none;
+    display: flex;
+    color: white;
+}
+.header__right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 1.8rem;
+}
+.header__cart{
+    margin-right: 30px;
+    font-size: 2.5rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.header__navigation-item-link:hover{
+    color: #ff514e;
+    text-decoration: none;
+}
+
+.header__user{
+    display: flex;
+    color: white;
+    text-decoration: none;
+}
+.header__user-icon{
+    margin-right:10px;
+}
+.header__right-user-link:hover{
+    text-decoration: none;
+}
+.body__image{
+    width:100%;
+    height:320px;
+    margin-bottom: 88px;
+}
+.category{
+
+    height:649px
+}
+.popular-content{
+    font-weight: 600;
+    font-size:1.6rem;
+}
+.list-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.category__popular-list{
+    list-style: none;
+    margin: 16px;
+}
+/* Điều hướng menu popular */
+.body-navigation-item-image{
+    width:2.2rem;
+    height:2.2rem;
+}
+.body__navigation-list{
+    list-style: none;
+    padding-left: 0 ;
+    margin-bottom: 0;
+}
+.body__navigation-list-item{
+    padding:10px ;
+    border-radius: 5px;
+}
+.body__navigation-list-item:hover{
+    background-color:rgb(218, 213, 213);
+}
+h3{
+    padding:0 10px 10px 10px;
+    border-bottom: 0.2rem solid gray;
+}
+.body__navigation-link-item:hover{
+    text-decoration: none;
+}
+/* Giá tiền */
+.price{
+    padding: 10px ;
+}
+.price-item{
+    padding:5px;
+    cursor: pointer;
+}
+/* Đánh giá */
+.body__navigation-rating-list{
+    list-style: none;
+    padding-left: 0;
+}
+.body__navigation-rating-item{
+    padding:5px 10px;
+}
+.body__navigation-rating-item i{
+    color: rgb(233, 211, 13);
+}
+.body__navigation-rating-item:hover .body__rating-content{
+    color: #ff514e;
+}
+.nav-menu{
+    border: 0.3rem dashed gray;
+    border-radius: 10px;
+}
+.list-heading{
+    display: flex; 
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.search-food{
+    width: 100%;
+    position: relative;
+    margin-right: 5px;
+}
+.body-list-list{
+    margin-top: 15px;
+}
+.search{
+    width: 100%;
+    padding:10px ;
+    border-radius: 20px;  
+}
+
+.featute{
+    width: 100%;
+    margin-right: 5px;
+    border-radius:10px;
+    padding: 5px 15px 5px 15px;
+}
+.btn-search{
+    position: absolute;
+    outline: none;
+    border: none;
+    background-color:transparent;
+    right: 10px;
+    top: 5px;
+    height:35px;
+    width:35px
+}
+.list-heading-select{
+    border: 2px solid black;
+    width:100%;
+    margin-right: 7px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:5px 15px;
+    border-radius:10px;
+    position:relative;
+}
+.heading-option{
+    margin-right: 30px;
+}
+.menu-list{
+    position: absolute;
+    width: 100%;
+    right: -0.5px;
+    margin-top: 20px;
+    border: 2px solid rgb(161, 161, 161);
+    box-shadow: 0 0 10px rgba(209, 197, 197, 0.7);
+    top: 30px;
+    text-align: left;
+    display:none;
+}
+.list-heading-form{
+    display: flex;
+    flex: 4.5;
+}
+.list-heading-selection{
+    display: flex;
+    flex: 1.3;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+}
+
+.menu-list{
+    list-style: none;
+    padding: 10px 0;
+    border-radius:8px;
+    width: 100%;
+}
+.menu-list-item{
+    padding: 10px 0 ;
+    text-align: center;
+}
+.menu-list-item:hover{
+    background-color:rgb(199, 196, 196);
+}
+.list-heading-select:hover .menu-list{
+    display:block;
+}
+.list-heading-select::after{
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 90px;
+    right: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
+}
+/* List of food */
+.product{
+    margin:auto 15px ;
+}
+
+.item-image{
+    width: 100%;
+}
+.food-item{
+    width: 16.6666667%;
+    box-shadow: 0 0 10px rgba(209, 197, 197, 0.7);
+    border-radius: 10px;
+}
+
+.food-name{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.food-name:hover{
+    color: #ff514e;
+}
+.more-info{
+    display: inline-flex;
+    font-size: 1.7rem;
+}
+.price{
+    font-weight: 600;
+    color:#ff514e;
+    margin-left:4px;
+}
+.food-origin i{
+    color:#ff514e;
+}
+.item-product {
+    margin-bottom: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(117, 114, 114, 0.7);
+    margin-right: 5px;
+    padding-left:0 !important;
+    padding-right:0 !important;
+    padding-bottom: 10px;
+}
+.list-food-info{
+    padding: 0 10px;
+}
+/* Paging navigation*/
+.list-page{
+    list-style: none;
+    display:flex;
+    justify-content: center;
+}
+.list-page li{
+    margin: 10px;
+    border: 0 solid gray;
+    padding:5px 15px;
+    border-radius:15px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(209, 197, 197, 0.7);
+}
+.list-page li:hover{
+    background-color: rgb(233, 227, 227);
+}
+/* Footer */
+.footer{
+    background-color:rgba(228,160,183,255);
+    width:100%;
+    height:289px;
+    margin-top: 10px;
+    padding: 10px;
+}
+.footer-col{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.con-footer{
+    margin-left: 0 !important;
+    margin-right: 0  !important;
+    padding-left: 0 !important;
+    width:100% !important; 
+}
+.footer-timeline-list{
+    list-style: none;
+}
+.footer-timeline ul li{
+    margin-bottom: 10px;
+}
+.footer-timeline-list{
+    color: white;
+    font-weight: 500;
+}
+.footer-timeline-space{
+    color: rgb(236, 175, 6);
+    font-weight: 700;
+}
+.footer-working{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.footer-address{
+    margin-left: 70px;
+    height: 100%;
+    color:white;
+}
+.footer-address h1{
+    font-weight: 535;
+    margin-bottom:15px;
+    font-size: 4rem;
+}
+.contact-detail{
+    margin-left: 10px;
+    cursor: pointer;
+}
+.footer-address-contact{
+    margin-bottom: 10px;
+}
+
+.footer-address-contact i{
+    color:rgb(226, 167, 40);
+}
+.contact-detail:hover{
+    color:rgb(226, 167, 40);
+}
+.instagram{
+    color: #ff514e;
+}
+.social-contact-link{
+    font-size: 2rem;
+    margin-right: 5px;
+}
+.youtube{
+    color: red;
+}
+.introduction{
+    margin-left: 30px;
+    background-color:white;
+    height: 100%;
+}

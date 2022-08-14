@@ -1,0 +1,141 @@
+/*Mobile + Tablet */
+
+@media (max-width: 1023px) {}
+
+
+/*Tablet + PC*/
+
+@media (min-width: 740px) {
+    .hide-on-tablet-pc {
+        display: none;
+    }
+}
+
+
+/*Mobile*/
+
+@media (max-width: 739px) {
+    .slider-wrapper {
+        height: 400px;
+    }
+    .slider__info {
+        bottom: 36%;
+    }
+    .slider-price {
+        font-size: 14px;
+    }
+    .slider-old-price {
+        font-size: 20px;
+    }
+    .slider-new-price {
+        font-size: 40px;
+    }
+    .slider-sale {
+        font-size: 24px;
+        width: 60px;
+        position: relative;
+        left: -20px;
+        height: 48px;
+    }
+    .slider-button {
+        font-size: 14px;
+    }
+    .slider-next,
+    .slider-prev {
+        display: none;
+    }
+    .category-item-container {
+        height: 60px;
+        margin: 4px;
+    }
+    .category-item-img img {
+        width: 40px;
+    }
+    .category-item-title {
+        font-size: 12px;
+    }
+    .statictis {
+        height: 100px;
+    }
+    .statistic-item__num {
+        font-size: 30px;
+    }
+    .statistic-item__text {
+        font-size: 16px;
+        margin-top: 8px;
+    }
+    .review__img img {
+        width: 120px;
+        height: 120px;
+    }
+    .review__comment {
+        margin-top: 20px;
+    }
+    .footer__info {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .footer__link {
+        font-size: 10px;
+    }
+    .footer__info,
+    .footer__list {
+        width: 320px;
+    }
+    .footer__item {
+        padding: 0 4px;
+    }
+    .footer__icon {
+        font-size: 10px;
+        margin-left: 4px;
+    }
+}
+
+
+/*Tablet*/
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .category-item-container {
+        height: 100px;
+        margin: 8px;
+    }
+    .statictis {
+        height: 120px;
+    }
+    .statistic-item__num {
+        font-size: 32px;
+    }
+    .statistic-item__text {
+        font-size: 16px;
+        margin-top: 8px;
+    }
+    .slider-wrapper {
+        height: 500px;
+    }
+    .slider__info {
+        bottom: 36%;
+    }
+    .slider-price {
+        font-size: 16px;
+    }
+    .slider-old-price {
+        font-size: 24px;
+    }
+    .slider-new-price {
+        font-size: 60px;
+    }
+    .slider-sale {
+        font-size: 30px;
+        width: 80px;
+        height: 60px;
+    }
+}
+
+
+/*PC*/
+
+@media (min-width: 1024px) {
+    .hide-on-pc {
+        display: none;
+    }
+}

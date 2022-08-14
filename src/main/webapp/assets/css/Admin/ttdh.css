@@ -1,0 +1,415 @@
+body {
+    background: #eee4ff;
+}
+
+
+/* logo */
+
+.header {
+    width: 100%;
+    background-color: rgba(56, 53, 53, 0.788);
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 0;
+    position: fixed;
+    z-index: 1;
+}
+
+.admin {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+.admin__name {
+    top: 12px;
+    position: absolute;
+    right: calc(10% + 24px);
+}
+
+.admin__logout {
+    top: 12px;
+    position: absolute;
+    right: 10%;
+}
+
+
+/* Danh mục */
+
+#category_details {
+    display: flex;
+    justify-content: space-between;
+}
+
+#category_details>li {
+    display: inline-block;
+}
+
+#category_details li {
+    position: relative;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+#category_details li a {
+    text-decoration: none;
+    padding: 0 10px;
+    display: inline-block;
+    margin: 12px 18px
+}
+
+#category_details li a h3 {
+    text-decoration: none;
+    padding: 0 10px;
+    display: block;
+}
+
+
+/* Search User */
+
+body,
+input {
+    color: #171717;
+}
+
+.search-bar input,
+.search-btn {
+    width: 3em;
+    height: 3em;
+}
+
+.search-bar input:invalid:not(:focus),
+.search-btn {
+    cursor: pointer;
+}
+
+.search-bar,
+.search-bar input:focus,
+.search-bar input:valid {
+    width: 100%;
+}
+
+.search-bar input:focus,
+.search-bar input:not(:focus)+.search-btn:focus {
+    outline: transparent;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    max-width: 15em;
+    padding: 0px 55px;
+}
+
+.seach-user-form {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.seach-user-form input[type="text"] {
+    padding: 5px;
+    border-radius: 10px;
+    min-width: 200px;
+}
+
+.seach-user-form input[type="submit"] {
+    background: white;
+    padding: 5px;
+    background-color: rgb(155, 184, 240);
+    border-radius: 10px;
+    margin-left: -3px;
+}
+
+.search-bar input::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+.search-bar input:focus,
+.search-bar input:valid {
+    background: #fff;
+    border-radius: 0.375em 0 0 0.375em;
+    box-shadow: 0 0 0 0.1em #d9d9d9 inset;
+    transform: scale(1);
+}
+
+.search-btn {
+    background: #171717;
+    border-radius: 0 0.75em 0.75em 0 / 0 1.5em 1.5em 0;
+    padding: 0.75em;
+    position: relative;
+    transform: translate(0.25em, 0.25em) rotate(45deg) scale(0.25, 0.125);
+    transform-origin: 0 50%;
+}
+
+.search-btn:before,
+.search-btn:after {
+    content: "";
+    display: block;
+    opacity: 0;
+    position: absolute;
+}
+
+.search-btn:before {
+    border-radius: 50%;
+    box-shadow: 0 0 0 0.2em #f1f1f1 inset;
+    top: 0.75em;
+    left: 0.75em;
+    width: 1.2em;
+    height: 1.2em;
+}
+
+.search-btn:after {
+    background: #f1f1f1;
+    border-radius: 0 0.25em 0.25em 0;
+    top: 51%;
+    left: 51%;
+    width: 0.75em;
+    height: 0.25em;
+    transform: translate(0.2em, 0) rotate(45deg);
+    transform-origin: 0 50%;
+}
+
+.search-btn span {
+    display: inline-block;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+}
+
+
+/* Active state */
+
+.search-bar input:focus+.search-btn,
+.search-bar input:valid+.search-btn {
+    background: #2762f3;
+    border-radius: 0 0.375em 0.375em 0;
+    transform: scale(1);
+}
+
+.search-bar input:focus+.search-btn:before,
+.search-bar input:focus+.search-btn:after,
+.search-bar input:valid+.search-btn:before,
+.search-bar input:valid+.search-btn:after {
+    opacity: 1;
+}
+
+.search-bar input:focus+.search-btn:hover,
+.search-bar input:valid+.search-btn:hover,
+.search-bar input:valid:not(:focus)+.search-btn:focus {
+    background: #0c48db;
+}
+
+.search-bar input:focus+.search-btn:active,
+.search-bar input:valid+.search-btn:active {
+    transform: translateY(1px);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    body,
+    input {
+        color: #020202;
+    }
+    .search-bar input {
+        box-shadow: 0 0 0 0.4em #c71717 inset;
+    }
+    .search-bar input:focus,
+    .search-bar input:valid {
+        background: #3d3d3d;
+        box-shadow: 0 0 0 0.1em #3d3d3d inset;
+    }
+    .search-btn {
+        background: #f1f1f1;
+    }
+}
+
+.search {
+    margin: 5px 12px 5px 2px;
+    float: left;
+}
+
+.search1 {
+    display: flex;
+}
+
+/*table info_details*/
+#info_details{
+    display: flex;
+}
+
+/* table info */
+#info {
+    margin: 10px;
+    width: 65%;
+}
+
+#info table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#info>table>thead>tr>th>a {
+    text-decoration: none;
+    color: black;
+}
+
+#info>table>thead>tr>th>a:hover {
+    color: red;
+}
+
+#info th {
+    color: #171717;
+    padding: 18px 0 20px 0;
+    align-content: center;
+}
+
+.table-header {}
+
+#info tfoot td {
+    color: #171717;
+    border: 1px solid red;
+    padding: 10px;
+}
+
+
+/* table info1 */
+#info1 {
+    margin-top: 13px;
+    padding: 7px 5px 8px 13px;
+    margin-right: 46px;
+    width: 30%;
+}
+
+#info1 table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#info1 table tbody tr th {
+    padding: 18px 11px 20px 11px;
+}
+
+/*#info1 th {
+    color: #171717;
+    padding: 17px 40px 45px 40px;
+    align-content: center;
+    height: 35px;
+}*/
+
+#info1 tfoot td {
+    color: #171717;
+    border: 1px solid red;
+    padding: 11px;
+}
+
+tr.info-list th {
+    padding: 23px 20px 23px 20px;
+    /* text-align: center; */
+    align-content: center;
+}
+
+
+/* Nút Dropdown*/
+
+.nut_dropdown {
+    color: black;
+    padding: 2px;
+    font-size: 15px;
+    border: none;
+    position: relative;
+    margin-left: 0 !important;
+    width: 10px;
+    height: 20px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    display: flex;
+}
+
+
+/* Thiết lập vị trí cho thẻ div với class dropdown*/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+/* Nội dung Dropdown */
+
+.noidung_dropdown {
+    /*Ẩn nội dụng các đường dẫn*/
+    margin: 4px 7px;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 104px;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    z-index: 1;
+    font-size: 12px;
+}
+
+
+/* Thiết kế style cho các đường dẫn tronng Dropdown */
+
+.noidung_dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* thay đổi màu background khi hover vào đường dẫn */
+
+.noidung_dropdown a:hover {
+    background-color: #ddd;
+}
+
+
+/* hiển thị nội dung dropdown khi hover */
+
+.dropdown:hover .noidung_dropdown {
+    display: block;
+}
+
+
+/* Thay đổi màu background cho nút khi được hover */
+
+
+/* .dropdown:hover .nut_dropdown {background-color: #00bfff;} */
+
+
+/*Dùng Để hiển thị nội dung*/
+
+.hienThi {
+    display: block;
+}
+
+.total_vip .dropdown .nut_dropdown {
+    margin: 2px 19px;
+}
+
+.total_vip .dropdown .noidung_dropdown {
+    margin: 4px 0;
+}
+
+.nut_dropdown {
+    background-color: #eee4ff;
+}
+
+
+/* .content-dropdown{
+  position: relative;
+} */
+
+.content-dropdown::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    bottom: -10px;
+    left: -10px;
+}
